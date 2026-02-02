@@ -1,0 +1,82 @@
+🚀 World Vision 보고서 생성 AI 에이전트 - 빠른 시작
+================================================================
+
+📋 1단계: API Key 설정
+----------------------------------------------------------------
+1. OpenAI API Key를 발급받으세요: https://platform.openai.com/api-keys
+2. 프로젝트 폴더에서 `.env` 파일을 열어주세요
+3. 다음과 같이 API Key를 입력하세요:
+
+   OPENAI_API_KEY=sk-proj-여기에-발급받은-키-입력
+
+4. 저장하고 닫으세요
+
+
+💻 2단계: 가상환경 설정 및 패키지 설치
+----------------------------------------------------------------
+
+[Windows 사용자]
+1. 프로젝트 폴더에서 PowerShell 또는 CMD를 엽니다
+2. 다음 명령어를 순서대로 실행하세요:
+
+   python -m venv venv
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+   .\venv\Scripts\activate
+   pip install -r requirements.txt
+
+[Mac/Linux 사용자]
+1. 프로젝트 폴더에서 터미널을 엽니다
+2. 다음 명령어를 순서대로 실행하세요:
+
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+
+
+▶️ 3단계: 실행
+----------------------------------------------------------------
+
+[간단한 방법 - 스크립트 사용]
+- Windows: run.bat 더블클릭
+- Mac/Linux: ./run.sh 실행
+
+[수동 실행]
+1. 가상환경이 활성화된 상태에서:
+   streamlit run app.py
+
+2. 브라우저에 자동으로 열립니다 (http://localhost:8501)
+
+
+📖 4단계: 사용하기
+----------------------------------------------------------------
+1. 왼쪽 사이드바에서 PDF 파일 업로드
+2. 보고서 유형 선택
+3. 다음 중 선택:
+   - 💬 대화형 질문: 문서에 대해 질문하기
+   - 📝 보고서 자동 생성: 원클릭 보고서 생성
+
+
+🔧 문제 해결
+----------------------------------------------------------------
+
+[Python 인식 안 됨]
+→ Python 재설치 시 "Add Python to PATH" 체크
+
+[API Key 오류]
+→ .env 파일에서 API Key 확인 (sk-proj-로 시작해야 함)
+
+[패키지 설치 오류]
+→ pip install --upgrade pip 후 재시도
+
+[한글 깨짐]
+→ UTF-8 인코딩된 PDF 파일 사용
+
+
+📞 도움말
+----------------------------------------------------------------
+자세한 내용은 README.md를 참고하세요.
+질문이 있으면 카카오톡 오픈채팅방으로 문의해 주세요.
+
+
+World Vision AI Platform v1.0
+Powered by GPT-4o & LangChain
